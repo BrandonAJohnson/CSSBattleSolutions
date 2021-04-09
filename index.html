@@ -19,14 +19,20 @@
 			margin: 0;
 			list-style: none;
 		 }
-		 .item {
+		.item {
 			border: 3px solid white;
 			padding: 0;
 			width: 400px;
 			height: 300px;
 			margin: 25px;
 			display: inline-block;
-		 }
+		}
+
+		.battle-container {
+			height: inherit;
+			width: inherit;
+			position: relative;
+		}
 
 		/* battle 1 */
 		#battle1 {
@@ -43,11 +49,6 @@
 		 #battle2 {
 			background: #62374e;
 		 }
-		#battle2-container {
-			position: relative;
-			height: inherit;
-			width: inherit;
-		}
 		#battle2-container > div {
 			width: 50px;
 			height: 50px;
@@ -79,11 +80,6 @@
 		#battle3 {
 			background: #6592CF;
 		}
-		#battle3-container {
-			height: inherit;
-			width: inherit;
-			position: relative;
-		}
 		#battle3-container > div {
 			position: absolute;
 			left:0;
@@ -111,11 +107,6 @@
 		/* battle 4 */
 		#battle4 {
 			background: #62306D;
-		}
-		#battle4-container {
-			height: inherit;
-			width: inherit;
-			position: relative;
 		}
 		#battle4-container > div {
 			width: 100px;
@@ -154,11 +145,6 @@
 		#battle5 {
 			background: #0B2429;
 		}
-		#battle5-container {
-			height: inherit;
-			width: inherit;
-			position: relative;
-		}
 		#battle5-1 {
 			width: 120px;
 			height: 120px;
@@ -193,6 +179,40 @@
 			margin: auto;
 		}
 		/* battle 5 end */
+
+		/* battle 6 */
+		#battle6 {
+			background: #E3516E;
+		}
+		#battle6-wrapper {
+			position: absolute;
+			border-radius: 100%;
+			width: 200px;
+			height: 200px;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			overflow: hidden;
+		}
+		#battle6-wrapper > div {
+			position: absolute;
+			height: 50%;
+			width: 50%;
+		}
+		#battle6-1 {
+			background: #51B5A9;
+		}
+		#battle6-2 {
+			bottom: 0;
+			background: #F7F3D7;
+		}
+		#battle6-3 {
+			right: 0;
+			background: #FADE8B;
+		}
+		/* battle 6 end */
 	</style>
 </head>
 <body>
@@ -201,7 +221,7 @@
 			<div></div>
 		</div>
 		<div class="item" id="battle2">
-			<div id="battle2-container">
+			<div class="battle-container" id="battle2-container">
 				<div class="top-left"></div>
 				<div class="top-right"></div>
 				<div class="bottom-right"></div>
@@ -209,7 +229,7 @@
 			</div>
 		</div>
 		<div class="item" id="battle3">
-			<div id="battle3-container">
+			<div class="battle-container" id="battle3-container">
 				<div class="back"></div>
 				<div class="middle"></div>
 			</div>
@@ -220,9 +240,18 @@
 			</div>
 		</div>
 		<div class="item" id="battle5">
-			<div id="battle5-container">
+			<div class="battle-container" id="battle5-container">
 				<div id="battle5-2"></div>
 				<div id="battle5-1"></div>
+			</div>
+		</div>
+		<div class="item" id="battle6">
+			<div class="battle-container" id="battle6-container">
+				<div id="battle6-wrapper">
+					<div id="battle6-1"></div>
+					<div id="battle6-2"></div>
+					<div id="battle6-3"></div>
+				</div>
 			</div>
 		</div>
 	</div>
