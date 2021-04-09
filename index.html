@@ -110,10 +110,53 @@
 				0 0 0 100px #6592CF;
 		}
 		/* battle 3 end */
+
+		/* battle 4 */
+		#battle4 {
+			background: #62306D;
+			position: relative;
+		}
+		#battle4-container {
+			height: inherit;
+			width: inherit;
+			background: #62306D;
+		}
+		#battle4-container > div {
+			width: 100px;
+			height: 100px;
+			background: #F7EC7D;
+			border-radius: 75% 75% 0 0;
+			margin-bottom: 100px;
+			position: relative;
+			left: 0;
+			right: 0;
+			top: 50px;
+			margin: auto;
+		}
+		#battle4-container > div::before {
+			content: " ";
+			width: 100px;
+			height: 100px;
+			background: #F7EC7D;
+			border-radius: 0 0 75% 75%;
+			position: absolute;
+			left: -100px;
+			top: 100px;
+		}
+		#battle4-container > div::after {
+			content: " ";
+			width: 100px;
+			height: 100px;
+			background: #F7EC7D;
+			border-radius: 0 0 75% 75%;
+			position: absolute;
+			right: -100px;
+			top: 100px;
+		}
+		/* battle 4 end */
 	</style>
 </head>
 <body>
-
 	<div id="container">
 		<div class="item" id="battle1">
 			<div></div>
@@ -130,6 +173,11 @@
 			<div id="battle3-container">
 				<div class="back"></div>
 				<div class="middle"></div>
+			</div>
+		</div>
+		<div class="item" id="battle4">
+			<div id="battle4-container">
+				<div></div>
 			</div>
 		</div>
 	</div>
