@@ -11,9 +11,6 @@
 			margin: 25px;
 			background: #151515;
 		}
-		* {
-			box-sizing: border-box;
-		}
 		.container {
 			display: flex;
 			flex-flow: row wrap;
@@ -23,7 +20,7 @@
 			list-style: none;
 		 }
 		 .item {
-			border: 1px solid white;
+			border: 3px solid white;
 			padding: 0;
 			width: 400px;
 			height: 300px;
@@ -114,19 +111,17 @@
 		/* battle 4 */
 		#battle4 {
 			background: #62306D;
-			position: relative;
 		}
 		#battle4-container {
 			height: inherit;
 			width: inherit;
-			background: #62306D;
+			position: relative;
 		}
 		#battle4-container > div {
 			width: 100px;
 			height: 100px;
 			background: #F7EC7D;
 			border-radius: 75% 75% 0 0;
-			margin-bottom: 100px;
 			position: relative;
 			left: 0;
 			right: 0;
@@ -154,6 +149,50 @@
 			top: 100px;
 		}
 		/* battle 4 end */
+
+		/* battle 5 */
+		#battle5 {
+			background: #0B2429;
+		}
+		#battle5-container {
+			height: inherit;
+			width: inherit;
+			position: relative;
+		}
+		#battle5-1 {
+			width: 120px;
+			height: 120px;
+			border-radius: 100% 100% 0;
+			transform: rotate(270deg);
+			background: #998235;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+		}
+		#battle5-1::before {
+			content: " ";
+			width: 120px;
+			height: 120px;
+			border-radius: 100% 100% 0;
+			background: #F3AC3C;
+			position: absolute;
+			top: -60px;
+			right: 60px;
+		}
+		#battle5-2 {
+			width: 120px;
+			height: 120px;
+			border-radius: 100%;
+			background: #F3AC3C;
+			position: absolute;
+			top: 30px;
+			right: 80px;
+			margin: auto;
+		}
+		/* battle 5 end */
 	</style>
 </head>
 <body>
@@ -178,6 +217,12 @@
 		<div class="item" id="battle4">
 			<div id="battle4-container">
 				<div></div>
+			</div>
+		</div>
+		<div class="item" id="battle5">
+			<div id="battle5-container">
+				<div id="battle5-2"></div>
+				<div id="battle5-1"></div>
 			</div>
 		</div>
 	</div>
