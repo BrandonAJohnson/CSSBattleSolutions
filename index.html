@@ -26,6 +26,7 @@
 			height: 300px;
 			margin: 25px;
 			display: inline-block;
+			position: relative;
 		}
 
 		.battle-container {
@@ -243,6 +244,99 @@
 			right: 0;
 		}
 		/* battle 7 end */
+
+		/* battle 8 */
+		#battle8 {
+			background: #6592CF;
+		}
+		#battle8-container {
+			border-radius: 0 0 100px 100px;
+			width: 140px;
+			height: 100px;
+			background: #060F55;
+			position: absolute;
+			top: 150px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		#battle8-container::after {
+			content: " ";
+			background: #060F55;
+			height: 55px;
+			width: 20px;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			top: 95px;
+		}
+		#battle8-container > div {
+			background: #060F55;
+			height: 100px;
+			width: 20px;
+			border-radius: 100px 100px 0 0;
+			position: absolute;
+			top: -100px;
+		}
+		#battle8-container > div::after {
+			content: " ";
+			background: #6592CF;
+			height: 100px;
+			width: 20px;
+			border-radius: 0 0 100px 100px;
+			position: absolute;
+			left: 20px;
+			top: 10px;
+		 }
+		#battle8-1 {
+			left: 0;
+		}
+		#battle8-2 {
+			left: 40px;
+		}
+		#battle8-3 {
+			right: 40px;
+		}
+		#battle8-4 {
+			right: 0;
+		}
+		/* battle 8 end */
+
+		/* battle 9 */
+		#battle9 {
+			background: #222730;
+		}
+		#battle9-container {
+			position: relative;
+			overflow: hidden;
+		}
+		.battle9-div {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		#battle9-1 {
+			width: 400px;
+   		height: 150px;
+			background: #4CAAB3;
+		}
+		#battle9-2 {
+			background: #4CAAB3;
+			height: 150px;
+			width: 150px;
+			transform: rotate(45deg);
+			box-shadow: 0 0 0 50px #222730;
+		}
+		#battle9-3 {
+			border-radius: 100%;
+			width: 50px;
+			height: 50px;
+			background: #393E46;
+		}
+		/* battle 8 end */
 	</style>
 </head>
 <body>
@@ -289,6 +383,22 @@
 				<div id="battle7-1"></div>
 				<div id="battle7-2"></div>
 				<div id="battle7-3"></div>
+			</div>
+		</div>
+		<div class="item" id="battle8">
+			<div class="battle-container" id="battle8-container">
+				<div class="battle8-div" id="battle8-1"></div>
+				<div class="battle8-div" id="battle8-2"></div>
+				<div class="battle8-div" id="battle8-3"></div>
+				<div class="battle8-div" id="battle8-4"></div>
+			</div>
+		</div>
+		<div class="item" id="battle9">
+			<div class="battle-container" id="battle9-container">
+				<div class="battle9-div" id="battle9-1"></div>
+				<div class="battle9-div" id="battle9-2">
+					<div class="battle9-div" id="battle9-3"></div>
+				</div>
 			</div>
 		</div>
 	</div>
