@@ -6,6 +6,13 @@
 	<title>CSS Battle</title>
 
 	<style>
+		:root {
+			--t: 70;
+			--i: #AA445F;
+			--o: #E38F66;
+			--l: -180;
+		 }
+
 		body,html {
 			padding: 0;
 			margin: 25px;
@@ -336,7 +343,55 @@
 			height: 50px;
 			background: #393E46;
 		}
-		/* battle 8 end */
+		/* battle 9 end */
+
+		/* battle 10 */
+		#battle10 {
+			background: #62306D;
+		}
+		#battle10-container {
+			position: relative;
+			overflow: hidden;
+		}
+		.battle10-div {
+			border-radius: 100%;
+			width: 60px;
+			height: 60px;
+			background: var(--i);
+			box-shadow: 0 0 0 20px var(--o);
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: auto;
+			top: calc(var(--t)*1px);
+		}
+		#battle10-back1 {
+			height: 200px;
+			width: 100px;
+			background: #F7EC7D;
+			top: 100px;
+			margin: auto;
+			position: relative;
+		}
+		 #battle10-back2 {
+			height: 200px;
+			width: 275px;
+			background: #F7EC7D;
+			top: 190px;
+			left: 62px;
+			margin: auto;
+			position: absolute;
+		}
+		.battle10-side {
+			left: calc(var(--l)*1px);;
+			--t: 170;
+			--i: #E38F66;
+			--o: #AA445F;
+		}
+		#battle10-3 {
+			--l: 180;
+		}
+		/* battle 10 end */
 	</style>
 </head>
 <body>
@@ -399,6 +454,15 @@
 				<div class="battle9-div" id="battle9-2">
 					<div class="battle9-div" id="battle9-3"></div>
 				</div>
+			</div>
+		</div>
+		<div class="item" id="battle10">
+			<div class="battle-container" id="battle10-container">
+				<div id="battle10-back1"></div>
+				<div id="battle10-back2"></div>
+				<div class="battle10-div battle10-side" id="battle10-1"></div>
+				<div class="battle10-div" id="battle10-2"></div>
+				<div class="battle10-div battle10-side" id="battle10-3"></div>
 			</div>
 		</div>
 	</div>
